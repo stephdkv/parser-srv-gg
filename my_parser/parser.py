@@ -1,4 +1,6 @@
 import time
+from datetime import datetime
+import os
 
 import logging
 
@@ -43,58 +45,77 @@ class Parser:
             password_field.send_keys('Eurolite8999@mail.ru')
             driver.find_element(By.ID, 'kc-login').click()
             
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'link-primary'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'seq-select__value-container'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.ID, 'react-select-6-listbox'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'd-inline-block'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'form-check-input'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'd-inline-block'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'seq-select-container'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'seq-select__menu'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.ID, 'informed'))
-            ).click()
-            WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
-            ).click()
-            btn_bron = WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
-            ).is_enabled()
+            while True:
+                try:
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'link-primary'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'seq-select__value-container'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.ID, 'react-select-6-listbox'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'd-inline-block'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'form-check-input'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'd-inline-block'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'seq-select-container'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'seq-select__menu'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.ID, 'informed'))
+                    ).click()
+                    WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
+                    ).click()
+                    btn_bron = WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
+                    ).is_enabled()
+                    current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+                    screenshot_path = os.path.join('../images',f"screenshot_{current_time}.png")
+                    
+                    driver.save_screenshot(screenshot_path)
+                    
+                    if btn_bron:
+                        logging.info("Запись есть")
+                        
+                    else:
+                        logging.info("На ближайщие даты записей нет")
+
+                except Exception as e:
+                    logging.error(f"An error occurred: {e}")
+                   
         finally:
             driver.close()
 
-        return btn_bron
+        #return btn_bron
 
 if __name__ == "__main__":
     parser = Parser()
-    while True:
-        try:
-            available = parser.parse()
-            if available:
-                logging.info("Запись есть")
-                time.sleep(300)
-            else:
-                logging.info("На ближайщие даты записей нет")
-                time.sleep(300)
-        except Exception as e:
-            logging.error(f"An error occurred: {e}")
-            time.sleep(60)
+    parser.parse()
+    
+"""while True:
+    try:
+        available = parser.parse()
+        if available:
+            logging.info("Запись есть")
+            time.sleep(300)
+        else:
+            logging.info("На ближайщие даты записей нет")
+            time.sleep(300)
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        time.sleep(60)"""
