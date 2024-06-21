@@ -13,3 +13,4 @@ __pycache__/
 # Ignore log file
 parser.logs
 session
+images

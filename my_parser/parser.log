@@ -86,3 +86,96 @@ dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
 2024-06-20 17:16:11 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)': /session/23c436cf-2f54-40bc-ad85-c195c4a9ccc3/window
 2024-06-20 17:16:15 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AE917353D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/23c436cf-2f54-40bc-ad85-c195c4a9ccc3/window
 2024-06-20 17:16:19 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AE91734C90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/23c436cf-2f54-40bc-ad85-c195c4a9ccc3/window
+2024-06-21 10:51:22 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024A795F9890>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/1f1a8791-0f4e-44cc-9ebc-19fd6e167b3a/window
+2024-06-21 10:51:26 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024A795F9C50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/1f1a8791-0f4e-44cc-9ebc-19fd6e167b3a/window
+2024-06-21 10:51:31 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024A795FA250>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/1f1a8791-0f4e-44cc-9ebc-19fd6e167b3a/window
+2024-06-21 10:54:44 - INFO - На ближайщие даты записей нет
+2024-06-21 11:00:07 - INFO - На ближайщие даты записей нет
+2024-06-21 11:05:25 - INFO - На ближайщие даты записей нет
+2024-06-21 11:15:53 - INFO - На ближайщие даты записей нет
+2024-06-21 11:21:09 - INFO - На ближайщие даты записей нет
+2024-06-21 11:26:25 - INFO - На ближайщие даты записей нет
+2024-06-21 11:31:44 - INFO - На ближайщие даты записей нет
+2024-06-21 11:37:00 - INFO - На ближайщие даты записей нет
+2024-06-21 11:42:16 - INFO - На ближайщие даты записей нет
+2024-06-21 11:47:36 - INFO - На ближайщие даты записей нет
+2024-06-21 11:52:54 - INFO - На ближайщие даты записей нет
+2024-06-21 11:58:14 - INFO - На ближайщие даты записей нет
+2024-06-21 12:03:29 - INFO - На ближайщие даты записей нет
+2024-06-21 12:08:45 - INFO - На ближайщие даты записей нет
+2024-06-21 12:14:01 - INFO - На ближайщие даты записей нет
+2024-06-21 12:19:20 - INFO - На ближайщие даты записей нет
+2024-06-21 12:24:35 - INFO - На ближайщие даты записей нет
+2024-06-21 12:29:53 - INFO - На ближайщие даты записей нет
+2024-06-21 12:35:11 - INFO - На ближайщие даты записей нет
+2024-06-21 12:40:28 - INFO - На ближайщие даты записей нет
+2024-06-21 12:45:46 - INFO - На ближайщие даты записей нет
+2024-06-21 12:51:02 - INFO - На ближайщие даты записей нет
+2024-06-21 12:56:18 - INFO - На ближайщие даты записей нет
+2024-06-21 13:01:35 - INFO - На ближайщие даты записей нет
+2024-06-21 13:06:53 - INFO - На ближайщие даты записей нет
+2024-06-21 13:12:11 - INFO - На ближайщие даты записей нет
+2024-06-21 13:17:28 - INFO - На ближайщие даты записей нет
+2024-06-21 13:22:44 - INFO - На ближайщие даты записей нет
+2024-06-21 13:27:59 - INFO - На ближайщие даты записей нет
+2024-06-21 13:33:16 - INFO - На ближайщие даты записей нет
+2024-06-21 13:38:32 - INFO - На ближайщие даты записей нет
+2024-06-21 13:43:52 - INFO - На ближайщие даты записей нет
+2024-06-21 13:49:07 - INFO - На ближайщие даты записей нет
+2024-06-21 13:54:23 - INFO - На ближайщие даты записей нет
+2024-06-21 13:59:38 - INFO - На ближайщие даты записей нет
+2024-06-21 14:04:54 - INFO - На ближайщие даты записей нет
+2024-06-21 14:10:10 - INFO - На ближайщие даты записей нет
+2024-06-21 14:15:26 - INFO - На ближайщие даты записей нет
+2024-06-21 14:20:41 - INFO - На ближайщие даты записей нет
+2024-06-21 14:25:56 - INFO - На ближайщие даты записей нет
+2024-06-21 14:31:12 - INFO - На ближайщие даты записей нет
+2024-06-21 14:36:30 - INFO - На ближайщие даты записей нет
+2024-06-21 14:41:49 - INFO - На ближайщие даты записей нет
+2024-06-21 14:47:08 - INFO - На ближайщие даты записей нет
+2024-06-21 14:52:27 - INFO - На ближайщие даты записей нет
+2024-06-21 14:57:45 - INFO - На ближайщие даты записей нет
+2024-06-21 15:03:05 - ERROR - An error occurred: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-06-21 15:04:28 - ERROR - An error occurred: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-06-21 15:54:58 - INFO - На ближайщие даты записей нет
+2024-06-21 16:00:16 - INFO - На ближайщие даты записей нет
+2024-06-21 16:05:35 - INFO - На ближайщие даты записей нет
+2024-06-21 16:10:52 - INFO - На ближайщие даты записей нет
+2024-06-21 16:16:10 - INFO - На ближайщие даты записей нет
+2024-06-21 16:21:28 - INFO - На ближайщие даты записей нет
+2024-06-21 16:26:44 - INFO - На ближайщие даты записей нет
+2024-06-21 16:32:00 - INFO - На ближайщие даты записей нет
+2024-06-21 16:37:17 - INFO - На ближайщие даты записей нет
+2024-06-21 16:42:34 - INFO - На ближайщие даты записей нет
+2024-06-21 16:47:52 - INFO - На ближайщие даты записей нет
+2024-06-21 16:53:10 - INFO - На ближайщие даты записей нет
+2024-06-21 16:58:26 - INFO - На ближайщие даты записей нет
+2024-06-21 17:03:47 - INFO - На ближайщие даты записей нет
+2024-06-21 17:09:16 - INFO - На ближайщие даты записей нет
+2024-06-21 17:14:32 - INFO - На ближайщие даты записей нет
+2024-06-21 17:19:49 - INFO - На ближайщие даты записей нет
+2024-06-21 17:25:04 - INFO - На ближайщие даты записей нет
+2024-06-21 17:30:21 - INFO - На ближайщие даты записей нет
+2024-06-21 17:35:42 - INFO - На ближайщие даты записей нет
+2024-06-21 17:41:00 - INFO - На ближайщие даты записей нет
+2024-06-21 17:46:18 - INFO - На ближайщие даты записей нет
+2024-06-21 17:51:33 - INFO - На ближайщие даты записей нет
+2024-06-21 17:56:49 - INFO - На ближайщие даты записей нет
+2024-06-21 18:02:08 - INFO - На ближайщие даты записей нет
+2024-06-21 18:07:29 - INFO - На ближайщие даты записей нет
+2024-06-21 18:12:45 - INFO - На ближайщие даты записей нет
+2024-06-21 18:18:01 - INFO - На ближайщие даты записей нет
+2024-06-21 18:23:19 - INFO - На ближайщие даты записей нет
+2024-06-21 18:28:40 - INFO - На ближайщие даты записей нет

@@ -31,6 +31,7 @@ class Parser:
         option.set_preference('dom.webdriver.enable', False)
         option.set_preference('dom.webnotifications.enable', False)
         option.set_preference('general.useragent.override', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Firefox/89.0')
+        option.add_argument('--headless')
         driver = webdriver.Firefox(options=option)
         driver.minimize_window()
         driver.get('https://srv-gg.ru/auth/realms/fseq/protocol/openid-connect/auth?client_id=account&redirect_uri=https%3A%2F%2Fsrv-gg.ru%2F&state=918e0255-4a96-4530-8723-8f3bd9b48776&response_mode=fragment&response_type=code&scope=openid&nonce=a3161c0b-71fa-487d-8d87-6df7316f4b97&code_challenge=hHngFKGvWEQ8CzumtyTTln9LTiElkkpnAvHENvPb8bE&code_challenge_method=S256')
@@ -82,12 +83,16 @@ class Parser:
             btn_bron = WebDriverWait(driver, 10).until(
                 EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
             ).is_enabled()
+            btn_bron_element = WebDriverWait(driver, 10).until(
+                EC.visibility_of_element_located((By.CLASS_NAME, 'btn-seq-primary'))
+            )
             current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
             screenshot_path = os.path.join('../images',f"screenshot_{current_time}.png")
-            
+            driver.execute_script("arguments[0].scrollIntoView();", btn_bron_element)  
             driver.save_screenshot(screenshot_path)
-                    
+             
+            return btn_bron         
                     
                    
         finally:
