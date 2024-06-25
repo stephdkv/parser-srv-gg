@@ -91,6 +91,14 @@ class Parser:
             screenshot_path = os.path.join('../images',f"screenshot_{current_time}.png")
             driver.execute_script("arguments[0].scrollIntoView();", btn_bron_element)  
             driver.save_screenshot(screenshot_path)
+
+            calendar = driver.find_elements(By, 'react-datepicker__month')
+            for week in calendar:
+                days = week.find_elements(By, 'react-datepicker__week')
+                for day in days:
+                    day_item = day.find_element(By.XPATH, '//*[@tabindex="0"]').text
+                    day.find_element(By.XPATH, '//*[@tabindex="0"]').click()
+                    print(day_item)
              
             return btn_bron         
                     
